@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal-Solutions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-text: "Inter", sans-serif;
+        --color-primary: #1a0b2e;
+        --color-secondary: #351165;
+        --color-gradient: bg-linear-101 from-;
+      }
+      .gradient {
+        @apply bg-linear-[20deg] from-[#F7E93F] from-0% via-[#FB09B4] via-51% to-[#9100F8] to-100%;
+      }
+    </style>
+  </head>
+
+  <body class="max-w-400 m-auto">
+    <header>
+      <nav class="bg-primary w-full md:flex  md:items-center md:justify-around md:pb-5">
+       <div class="flex items-center justify-between">
+         <h1 class="p-5 text-3xl md:text-5xl md:p-7.5 font-text font-extrabold text-white">
+          Tech<span
+            class="bg-linear-8 from-[#F7E93F] from-0% via-[#FB09B4] via-35% to-[#9100F8] to-100%; bg-clip-text text-transparent"
+            >Wave</span
+          >
+        </h1>
+        <img
+          class="size-6 mr-5 md:hidden"
+          src="./assets/hamburger-menu.png"
+          alt="menu-bar"
+        />
+       </div>
+        <div class="hidden md:block text-white">
+          <ul class="flex justify-center items-center gap-8 font-text text-base font-medium ">
+            <li class="hover:text-pink-400"><a href="">About</a></li>
+            <li class="hover:text-pink-400"><a href="">Episodes</a></li>
+            <li class="hover:text-pink-400"><a href="">Host</a></li>
+          </ul>
+
+        </div>
+        <div class="hidden text-white md:block">
+          <button class="gradient rounded-[10000px] flex justify-center items-center gap-2 py-3 px-4 w-full">
+            <h4 class=" font-text text-base font-semibold">Subscribe</h4>
+            <i class="fa-solid fa-arrow-right text-sm"></i>
+          </button>
+            
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="bg-primary pb-10">
+        <div class="relative">
+          <img class="w-full h-90 md:h-140" src="assets/hero-bg.png" alt="banner" />
+          <img
+            class="absolute top-7 right-1/2 translate-x-1/2 size-50 md:size-87.5"
+            src="assets/hero-circle.png"
+            alt="hero-circle"
+          />
+          <img
+            class="absolute top-23 right-1/2 translate-x-1/2 w-11.5 md:w-[116.67px] md:top-28"
+            src="assets/microphone.png"
+            alt="microphone"
+          />
+          <button
+            class="bg-[#00FF88] px-4 py-2 drop-shadow-[0_3px_27px_#00FF88] rounded-[1000px] absolute top-9 md:top-10 right-40 md:right-127 font-text font-semibold text-base text-primary"
+          >
+            NEW
+          </button>
+          <div
+            class="absolute  mt-2 bottom-3.5 w-full right-1/2 translate-x-1/2 text-center md:bottom-7"
+          >
+            <h1 class="text-white text-[40px] font-extrabold font-text  md:text-6xl">
+              TechWave
+            </h1>
+            <p class="text-white text-base font-text px-15 md:mt-3">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex gap-2 justify-center items-center mt-6 md:mt-0">
+          <button
+            class="px-5 py-[12.5px] text-white font-text text-base font-semibold gradient rounded-[10000px] flex items-center justify-center gap-2">
+            <img class="size-5" src="assets/spotify.png" alt="icon-spotify" />Listen On Spotify
+          </button>
+          <button class="px-5 py-[12.5px] border border-[#00FF88] rounded-[10000px] text-[#00FF88] font-text text-base font-semibold flex items-center justify-center gap-2">
+            <img src="assets/message.png" alt="subscribe-icon" />Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
