@@ -2,5 +2,6 @@
   @theme {
         --font-text: "Inter", sans-serif;
         --color-primary:#1A0B2E;
-        --color-secondary:#351165;
-      }
+        --color-secondary:#230E3D;
+        --color-card:#351165;
+  }
