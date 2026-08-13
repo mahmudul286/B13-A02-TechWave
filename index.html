@@ -32,7 +32,7 @@
         @apply bg-card  p-6 lg:p-10 rounded-3xl lg:rounded-[40px] flex flex-col gap-4 [&_h4]:text-[22px] [&_h4]:text-white [&_h4]:font-bold text-left lg:text-2xl [&_p]:text-white/60 [&_p]:text-base/6 [&_img]:w-fit justify-center ;
       }
       .episode{
-          @apply bg-[#250D44] rounded-b-3xl px-4 py-4 justify-center flex flex-col gap-2 text-left [&_h4]:font-bold [&_h4]:text-[20px] [&_h4]:text-white lg:[&_h4]:text-2xl lg:gap-3 lg:px-6 lg:py-6 [&_p]:text-base/6 [&_p]:text-white/60 ;
+          @apply bg-[#250D44] rounded-b-3xl px-4 py-4 justify-center flex flex-col gap-2 text-left [&_h4]:font-bold [&_h4]:text-[20px] [&_h4]:text-white lg:[&_h4]:text-2xl lg:gap-3 md:p-5 lg:p-6 [&_p]:text-base/6 [&_p]:text-white/60 ;
       }
     </style>
   </head>
@@ -80,40 +80,41 @@
       <div class="bg-primary pb-10">
         <div class="relative">
           <img
-            class="w-full h-90 lg:h-140"
+            class="w-full h-90 md:h-115 lg:h-140"
             src="assets/hero-bg.png"
             alt="banner"
           />
           <img
-            class="absolute top-7 right-1/2 translate-x-1/2 size-50 lg:size-87.5"
+            class="absolute top-7 right-1/2 translate-x-1/2 size-50 md:size-70 lg:size-87.5"
             src="assets/hero-circle.png"
             alt="hero-circle"
           />
+          
           <img
-            class="absolute top-23 right-1/2 translate-x-1/2 w-11.5 lg:w-[116.67px] lg:top-28"
+            class="absolute top-23 right-1/2 translate-x-1/2 w-11.5 md:w-25 lg:w-[116.67px] lg:top-28"
             src="assets/microphone.png"
             alt="microphone"
           />
           <button
-            class="bg-[#00FF88] px-4 py-2 drop-shadow-[0_3px_27px_#00FF88] rounded-[1000px] absolute top-9 lg:top-10 right-40 lg:right-127 font-semibold text-base text-primary"
+            class="bg-[#00FF88] px-4 py-2 drop-shadow-[0_3px_27px_#00FF88] rounded-[1000px] absolute top-9 md:top-9.5 lg:top-10 left-1/2 translate-x-16.5 md:translate-x-20.5 lg:translate-x-25 font-semibold text-base text-primary"
           >
             NEW
           </button>
           <div
-            class="absolute mt-2 bottom-3.5 w-full right-1/2 translate-x-1/2 text-center lg:bottom-7"
+            class="absolute mt-2 bottom-3.5 w-full right-1/2 md:bottom-5.5 translate-x-1/2 text-center lg:bottom-7"
           >
             <h1
-              class="text-white text-[40px] font-extrabold  lg:text-6xl"
+              class="text-white text-[40px] font-extrabold  md:text-5xl lg:text-6xl"
             >
               TechWave
             </h1>
-            <p class="text-white/80 text-base px-15 lg:mt-3">
+            <p class="text-white/80 text-base md:mt-3 px-15 lg:mt-3">
               Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
           </div>
         </div>
-        <div class="w-full flex gap-2 justify-center items-center mt-6 lg:mt-0">
+        <div class="w-full flex gap-2 justify-center items-center md:mt-2 mt-6 lg:mt-0">
           <button
             class="px-5 py-[12.5px] text-white text-base font-semibold gradient rounded-[10000px] flex items-center justify-center gap-2"
           >
@@ -131,24 +132,24 @@
         </div>
       </div>
     </section>
-    <section class="bg-primary  px-5 lg:px-50">
-      <div class="py-10 lg:py-0 lg:pt-12.5 lg:pb-20 text-center">
-        <h1 class="text-[32px] lg:text-5xl font-bold text-white">
+    <section class="bg-primary md:px-10 px-5 lg:px-50">
+      <div class="py-10 md:py-0 lg:py-0 md:pt-7 lg:pt-12.5 lg:pb-20 text-center">
+        <h1 class="text-[32px] md:text-4xl lg:text-5xl font-bold text-white">
           About The Podcast
         </h1>
-        <p class="text-base/5 mt-4 px-7 lg:px-60 text-white/80">
+        <p class="text-base/5 mt-4 px-7   text-white/80">
           TechWave is your go-to podcast for staying ahead in the fast-paced
           world of technology. We break down complex topics into digestible
           insights, explore productivity strategies that actually work, and
           share stories of personal growth from industry leaders.
         </p>
-        <p class="text-base/5 mt-4 px-7 lg:mt-11 text-white/80">
+        <p class="text-base/5 mt-4 md:mt-5 px-7 lg:mt-11 text-white/80">
           Join thousands of young professionals and tech enthusiasts who start
           their day with TechWave.
         </p>
       </div>
       <div
-        class="grid grid-cols-2 lg:grid-cols-4 border-t border-white/10 lg:grid-rows-1 lg:gap-20 grid-rows-2 gap-10 text-center [&_h1]:text-[#00FF88] [&_h1]:font-black [&_h1]:text-[40px] lg:[&_h1]:text-5xl [&_h4]:text-white/80 [&_h4]:text-base/5 py-10 lg:py-0 lg:pt-20 lg:pb-30 [&_h4]:mt-4"
+        class="grid grid-cols-2 lg:grid-cols-4 border-t md:gap-15 border-white/10 lg:grid-rows-1 lg:gap-20 grid-rows-2 gap-10 text-center [&_h1]:text-[#00FF88] [&_h1]:font-black [&_h1]:text-[40px] lg:[&_h1]:text-5xl [&_h4]:text-white/80 [&_h4]:text-base/5 py-10 lg:py-0 lg:pt-20 lg:pb-30 [&_h4]:mt-4"
       >
         <div>
           <h1>150K+</h1>
@@ -168,9 +169,9 @@
         </div>
       </div>
     </section>
-    <section class="bg-secondary px-5 py-10 lg:px-50 lg:py-30">
+    <section class="bg-secondary px-5 py-10 lg:px-30 lg:py-30">
       <h2 class="text-center text-[32px] lg:text-5xl  font-bold text-white mb-4 lg:mb-10">Why Choose TechWave</h2>
-      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:grid-rows-3 lg:gap-7.5 lg:max-h-195.75">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:grid-rows-3 lg:gap-7.5 lg:max-h-195.75 lg:h-auto">
         <div class="card lg:row-span-2">
           <img src="assets/headphone.png" alt="headphone">
           <h4 class="">Premium Audio Quality</h4>
@@ -200,7 +201,7 @@
     </section>
     <section class="bg-primary px-5 py-10 lg:px-50 lg:py-30">
       <h2 class="text-white text-center pb-6 lg:pb-10 font-bold text-[32px] lg:text-5xl">Featured Episodes</h2>
-      <div class="grid grid-cols-1  gap-4 md:grid-cols-2 md:gap-5.5 lg:grid-cols-3 lg:gap-7.5 ">
+      <div class="grid grid-cols-1 lg:grid-rows-1 gap-4 md:grid-cols-2 md:gap-5.5 lg:grid-cols-3 lg:gap-7.5 ">
         <div class="w-full flex flex-col">
            <iframe class="block w-full aspect-video rounded-t-3xl" src="https://www.youtube.com/embed/86HGKHd9IBw?si=7gJEsyw32SuFGpY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
@@ -224,7 +225,7 @@
          </div>
           </div>
         </div>
-        <div class="md:col-span-2 flex flex-col w-full">
+        <div class="md:col-span-2 lg:col-span-1 flex flex-col w-full">
           <iframe class="block w-full aspect-video rounded-t-3xl" src="https://www.youtube.com/embed/aR777Fzbnp0?si=RJ3JHNH6dIzfmTJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <div class="episode flex-1">
           <h4>Career Growth in Tech: A Roadmap</h4>
@@ -237,5 +238,6 @@
         </div>
       </div>
     </section>
+    
   </body>
 </html>
